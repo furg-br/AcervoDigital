@@ -210,6 +210,14 @@ style.firebugResetStyles {
 	background-color: #dd4814;
 }
 
+.botaoRI:HOVER {
+	background-color: #c6461a;
+}
+
 .botaoBDTCCs {
 	background-color: #00a117;
+}
+
+.botaoBDTCCs:HOVER {
+	background-color: #008813;
 }

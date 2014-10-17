@@ -49,11 +49,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="Generator" content="<%= generator %>" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="<%= request.getContextPath() %>/favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" type="image/png" href="<%= request.getContextPath() %>/image/favicon.png" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-theme.css" type="text/css" />
+    	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+	    
 <%
     if (!"NONE".equals(feedRef))
     {
@@ -145,16 +147,6 @@
 </header>
 
 <main id="content" role="main">
-<div class="container banner">
-	<div class="row">
-		<div class="col-md-9 brand">
-		<h1><fmt:message key="jsp.layout.header-default.brand.heading" /></h1>
-        <fmt:message key="jsp.layout.header-default.brand.description" /> 
-        </div>
-        <div class="col-md-3"><img class="pull-right" src="<%= request.getContextPath() %>/image/logo.gif">
-        </div>
-	</div>
-</div>	
 <br/>
                 <%-- Location bar --%>
 <%
@@ -162,6 +154,7 @@
     {
 %>
 <div class="container">
+                <dspace:include page="/layout/portal-bar.jsp" />
                 <dspace:include page="/layout/location-bar.jsp" />
 </div>                
 <%

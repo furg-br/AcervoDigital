@@ -1,40 +1,27 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
+<%@ page import="org.dspace.core.ConfigurationManager" %>
 
 <html>
 <head>
 
-	<title></title>
+	<title>FURG - Repositórios unificados</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
  	<link href="<%= request.getContextPath() %>/static/css/bootstrap-combined.min.css"	rel="stylesheet">
 	
 	<!--[if lt IE 9]>
-	          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	        <![endif]-->
-<!-- 	<link rel="shortcut icon" href="/bootstrap/img/favicon.ico">
-	<link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png"> -->
+     	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
 	<link href="<%= request.getContextPath() %>/static/css/bootply.css" type="text/css"	rel="stylesheet"/>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
-	
 	<link href="<%= request.getContextPath() %>/static/css/portal.css" type="text/css"	rel="stylesheet"/>
-
-
-<!-- CSS code from Bootply.com editor -->
-
-<style type="text/css">
-
-</style>
-<style class="firebugResetStyles" type="text/css" charset="utf-8">/* See license.txt for terms of usage */
-</style>
-
+	
+	<link rel="shortcut icon" type="image/png" href="<%= request.getContextPath() %>/image/favicon.png" />
 
 </head>
 
 <body>
-
-
 
 	<div class="container">
 		<br> <br> <br>
@@ -55,9 +42,9 @@
 					<h1>
 						<i class="icon-beaker icon-4x"></i>
 					</h1>
-					<button class="btn btn-primary btn-flat botaoRI">
+					<a class="btn btn-primary btn-flat botaoRI" href="<%= request.getContextPath() %>/handle/<%= ConfigurationManager.getProperty("handle.ri")  %>">
 						Acessar<i class="pull-right icon-chevron-right icon-large"></i>
-					</button>
+					</a>
 				</div>
 			</div>
 			<div class="span3 block">
@@ -67,9 +54,9 @@
 					<h1>
 						<i class="icon-cloud icon-4x"></i>
 					</h1>
-					<button class="btn btn-primary btn-flat">
+					<a  href="<%= request.getContextPath() %>/handle/<%= ConfigurationManager.getProperty("handle.sabercom")  %>" class="btn btn-primary btn-flat">
 						Acessar<i class="pull-right icon-chevron-right icon-large"></i>
-					</button>
+					</a>
 				</div>
 			</div>
 			<div class="span3 block">
@@ -79,8 +66,9 @@
 					<h1>
 						<i class="icon-book icon-4x"></i>
 					</h1>
-					<button class="btn btn-primary btn-flat botaoBDTCCs">Acessar<i class="pull-right icon-chevron-right icon-large"></i>
-					</button>
+					<a class="btn btn-primary btn-flat botaoBDTCCs"  href="<%= request.getContextPath() %>/handle/<%= ConfigurationManager.getProperty("handle.bdtccs")  %>">Acessar
+						<i class="pull-right icon-chevron-right icon-large"></i>	
+					</a>
 				</div>
 			</div>
 
@@ -97,16 +85,17 @@
 		<br> <br>
 		<div class="row-fluid">
 			<div class="pull-right">
-				<a href="http://www.bootply.com"><i
-					class="icon-facebook icon-3x"></i> </a> &nbsp; <a
-					href="http://twitter.com/bootply"><i
-					class="icon-twitter icon-3x"></i></a>
+				<a href="https://www.facebook.com/furgrs" target="_blank">
+					<i class="icon-facebook icon-3x"></i> 
+				</a> &nbsp; 
+				<a href="https://twitter.com/BibliotecaFURG" target="_blank">
+					<i class="icon-twitter icon-3x"></i>
+				</a>
 			</div>
 
 		</div>
 		<br> <br>
 	</div>
-
 
 </body>
 </html>
