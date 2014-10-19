@@ -39,11 +39,11 @@
 		<i class="icon-beaker icon-4x"></i>
 	</a>
 
-	<a class="noDecoration" href="<%= request.getContextPath() %>/handle/<%= ConfigurationManager.getProperty("handle.sabercom")  %>">
+	<a class="noDecoration" href="http://www.repositorio.sead.furg.br:8080/jspui32/" target="_blank">
 		<i class="icon-cloud icon-4x"></i>
 	</a>
 		
-	<a class="noDecoration" href="<%= request.getContextPath() %>/handle/<%= ConfigurationManager.getProperty("handle.bdtccs")  %>">
+	<a class="noDecoration" href="http://bdtccs.furg.br:8080/bdtccs-jspui/" target="_blank">
 		<i class="icon-book icon-4x"></i>
 	</a>
 	</li>
