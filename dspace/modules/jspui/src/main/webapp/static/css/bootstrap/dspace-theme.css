@@ -533,3 +533,8 @@ body {
 .noDecoration:HOVER {
 	text-decoration: none;
 }
+
+/** Delimita tamanho fixo para caixas de seleção de data **/
+.date-picker-pt_BR {
+	width: 150px;
+}

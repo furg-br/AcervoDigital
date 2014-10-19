@@ -33,7 +33,7 @@
 
 <ol class="breadcrumb repositorios">
 	<li>
-		<h3>Acesse os repositórios</h3>
+		<h3><fmt:message key="portal.bar.header" /></h3>
 			
 	<a class="noDecoration" href="<%= request.getContextPath() %>/handle/<%= ConfigurationManager.getProperty("handle.ri")  %>">
 		<i class="icon-beaker icon-4x"></i>
