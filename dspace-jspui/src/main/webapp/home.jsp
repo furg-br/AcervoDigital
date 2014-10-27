@@ -127,7 +127,7 @@ if (submissions != null && submissions.count() > 0)
 		  <div class="carousel-inner">
 		    <%
 		    boolean first = true;
-		    for (Item item : submissions.getRecentSubmissions())
+		    for (Item item : rs.getRecentSubmissions())
 		    {
 		        DCValue[] dcv = item.getMetadata("dc", "title", null, Item.ANY);
 		        String displayTitle = "Untitled";

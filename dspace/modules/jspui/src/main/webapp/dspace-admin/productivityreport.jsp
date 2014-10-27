@@ -64,7 +64,7 @@
 			</label>
 			
 			<div class="col-md-6">
-				<input type="text" class="form-control date-picker-pt_BR"  size="20" id="init-date" name="init-date" value="<%= request.getParameter("init-date") %>"/> 
+				<input type="text" class="form-control date-picker-pt_BR"  size="20" id="init-date" name="init-date" value="<%= request.getParameter("init-date") != null ? request.getParameter("init-date") : "" %>"/> 
 			</div>
 		
 		</div>
@@ -80,7 +80,7 @@
 				<fmt:message key="jsp.dspace-admin.reportproductivity.form.enddate"></fmt:message>
 			</label>
 			 <div class="col-md-6">
-				<input type="text" class="form-control date-picker-pt_BR"  size="20" id="end-date" name="end-date" value="<%= request.getParameter("end-date") %>"/> 
+				<input type="text" class="form-control date-picker-pt_BR"  size="20" id="end-date" name="end-date" value="<%= request.getParameter("end-date") != null ? request.getParameter("end-date") : ""  %>"/> 
 			 </div>
 		 </div>
 		
@@ -95,7 +95,7 @@
 			</label>
 			 
 			 <div class="col-md-6">
-				<input type="text" class="form-control "  size="50" id="member-name" name="member-name" value="<%= request.getParameter("member-name") %>"/> 
+				<input type="text" class="form-control "  size="50" id="member-name" name="member-name" value="<%= request.getParameter("member-name") != null ? request.getParameter("member-name") : ""  %>"/> 
 			 </div>
 		</div>
 		

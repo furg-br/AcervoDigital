@@ -26,6 +26,8 @@
   
 <%@ page import="java.util.List" %>
 <%@ page import="org.dspace.core.ConfigurationManager" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+
 
 
 	<link href="<%= request.getContextPath() %>/static/css/bootply.css" type="text/css"	rel="stylesheet"/>
@@ -33,18 +35,18 @@
 
 <ol class="breadcrumb repositorios">
 	<li>
-		<h3><fmt:message key="portal.bar.header" /></h3>
+		<h3><fmt:message key="portal.bar.header"/></h3>
 			
-	<a class="noDecoration" href="<%= request.getContextPath() %>/handle/<%= ConfigurationManager.getProperty("handle.ri")  %>">
-		<i class="icon-beaker icon-4x"></i>
-	</a>
-
-	<a class="noDecoration" href="http://www.repositorio.sead.furg.br:8080/jspui32/" target="_blank">
-		<i class="icon-cloud icon-4x"></i>
-	</a>
-		
-	<a class="noDecoration" href="http://bdtccs.furg.br:8080/bdtccs-jspui/" target="_blank">
-		<i class="icon-book icon-4x"></i>
-	</a>
+		<a class="noDecoration" href="<%= request.getContextPath() %>/handle/<%= ConfigurationManager.getProperty("handle.ri")  %>">
+			<i class="icon-beaker icon-4x"></i>
+		</a>
+	
+		<a class="noDecoration" href="http://www.repositorio.sead.furg.br:8080/jspui32/" target="_blank">
+			<i class="icon-cloud icon-4x"></i>
+		</a>
+			
+		<a class="noDecoration" href="http://bdtccs.furg.br:8080/bdtccs-jspui/" target="_blank">
+			<i class="icon-book icon-4x"></i>
+		</a>
 	</li>
 </ol>
