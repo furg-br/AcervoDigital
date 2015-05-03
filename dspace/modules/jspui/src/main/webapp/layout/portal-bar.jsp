@@ -35,18 +35,18 @@
 
 <ol class="breadcrumb repositorios">
 	<li>
-		<h3><fmt:message key="portal.bar.header"/></h3>
-			
-		<a class="noDecoration" href="<%= request.getContextPath() %>/handle/<%= ConfigurationManager.getProperty("handle.ri")  %>">
-			<i class="icon-beaker icon-4x"></i>
+		<h3 style="color: white;"><fmt:message key="portal.bar.header"/></h3>
+		
+		<a  class="noDecoration" href="<%= request.getContextPath() %>/handle/<%= ConfigurationManager.getProperty("handle.ri")  %>">
+			<i class="icon-beaker icon-4x ri-portal"></i>
 		</a>
 	
-		<a class="noDecoration" href="http://www.repositorio.sead.furg.br:8080/jspui32/" target="_blank">
-			<i class="icon-cloud icon-4x"></i>
+		<a class="noDecoration" href="<%= request.getContextPath() %>/handle/<%= ConfigurationManager.getProperty("handle.sabercom")  %>">
+			<i class="icon-cloud icon-4x sabercom-portal"></i>
 		</a>
 			
-		<a class="noDecoration" href="http://bdtccs.furg.br:8080/bdtccs-jspui/" target="_blank">
-			<i class="icon-book icon-4x"></i>
+		<a class="noDecoration" href="<%= request.getContextPath() %>/handle/<%= ConfigurationManager.getProperty("handle.bdtccs")  %>">
+			<i class="icon-book icon-4x bdtccs-portal"></i>
 		</a>
 	</li>
 </ol>

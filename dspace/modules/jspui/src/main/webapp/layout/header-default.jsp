@@ -52,7 +52,15 @@
 		<link rel="shortcut icon" type="image/png" href="<%= request.getContextPath() %>/image/favicon.png" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
-	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
+		
+		<!--  -->
+		<%  Object theme = request.getAttribute("theme");
+			if(theme != null)  { %>
+	   			 <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/<%= theme.toString() %>" type="text/css" />
+	    <% } else { %>
+	    	<link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
+	    <% } %>
+	    
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-theme.css" type="text/css" />
 		<link href="<%= request.getContextPath() %>/static/css/font-awesome.min.css" type="text/css"	rel="stylesheet"/>
 	    
